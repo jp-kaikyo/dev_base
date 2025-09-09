@@ -1,0 +1,219 @@
+/* ==== PALETTE DES COULEURS ==== */
+
+
+:root {
+    --fond-principal:#0F0F0F;
+    --font-contenu:#1A1A1A;
+    --font-contours:#2E2E2E;
+    
+    --texte-titre:#ffffff;
+    --texte-courant:#d1d1d1;
+    --texte-lien:#6f6f6f;
+    
+    --objet-survol:#6E40C9;
+    --objet-permanent:#8B5CF6; 
+    --objet-clic:#9B6DED;
+}
+
+
+
+
+/* ==== PALETTE DES TEXTES ==== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+:root {
+    --police-titre: Georgia, "Times New Roman", serif;
+    --police-texte: "Comic Sans MS", cursive, sans-serif;
+    --taille-titre-principal: 2.5rem;  /* h1 */
+    --taille-sous-titre: 2rem;         /* h2 */
+    --taille-texte: 1rem;              /* p */
+    --gras-titre: 700;
+    --gras-texte: 400;
+}
+
+/* style titre */
+h1 {
+    font-family: var(--police-titre);
+    font-weight: var(--gras-titre);
+    font-size: var(--taille-titre-principal);
+    color: var(--texte-titre);
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: var(--police-titre);
+    font-weight: var(--gras-titre);
+    font-size: var(--taille-sous-titre);
+    color: var(--texte-titre);
+    margin-bottom: 0.5em;
+}
+
+/* style texte */
+p, span {
+    font-family: var(--police-texte);
+    font-weight: var(--gras-texte);
+    font-size: var(--taille-texte);
+    color: var(--texte-courant);
+    line-height: 1.6;
+}
+
+/* style lien */
+a {
+    font-style: oblique;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--texte-lien);
+}
+
+
+/* == hover == */
+
+a:hover {
+    color: var(--objet-survol);
+}
+
+
+/* == active == */
+
+a:active {
+    color: var(--objet-clic);
+}
+
+
+
+
+/* ==== PALETTE DES BULLE ==== */
+
+
+.bulle_principal {
+    background-color: var(--font-contenu);
+    color:var(--font-contours);
+    border: solid var(--font-contours);
+    padding: 9px;
+    margin: 5% 10% 5% 10%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.bulle_secondaire {
+    background-color: var(--font-contenu);
+    color:var(--font-contours);
+    border: solid var(--font-contours);
+    padding: 6px;
+    margin: 5% 15% 5% 15%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.bulle_info {
+    background-color: var(--font-contenu);
+    color:var(--font-contours);
+    border: solid var(--font-contours);
+    padding: 3px;
+    margin: 5% 20% 5% 20%;
+    text-align: center;
+    border-radius: 75px;
+    transition: 1s;
+}
+
+.bulle_action {
+    background-color: var(--font-contenu);
+    color:var(--font-contours);
+    border: solid var(--font-contours);
+    padding: 3px;
+    margin: 5% 20% 5% 20%;
+    text-align: center;
+    border-radius: 75px;
+    transition: 1s;
+}
+
+
+/* == hover == */
+
+
+.bulle_info:hover {
+    border: solid var(--objet-survol);
+    color: var(--texte-lien);
+    padding: 0px;
+    margin: 5% 21% 5% 21%;
+    transition: 1s;
+}
+.bulle_info:hover * {
+    color: inherit; /* "Prends la même couleur que ton parent" */
+    border: none;
+    transition: 1s;
+}
+
+
+.bulle_action:hover {
+    border: solid var(--texte-lien);
+    color: var(--objet-survol);
+    padding: 6px;
+    margin: 5% 19% 5% 19%;
+    transition: 1s;
+}
+.bulle_action:hover * {
+    color: inherit; /* "Prends la même couleur que ton parent" */
+    border: none;
+    transition: 1s;
+}
+
+
+/* == active == */
+
+.bulle_info:active {
+    border: solid var(--objet-clic);
+    transition: 1s;
+}
+
+.bulle_action:active {
+    color: var(--objet-clic);
+    transition: 1s;
+}
+
+
+
+
+/* ==== PALETTE DES BUTTONS ==== */
+
+
+.btn_base {
+    background-color: var(--objet-permanent);
+    padding: 5px 25px 5px 25px;
+    border-radius: 100px;
+    display: block; 
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+/* survol */
+
+.btn_base:hover {
+    background-color: var(--objet-survol);
+    padding: 3px 23px 3px 23px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+
+/* clic */
+
+.btn_base:active {
+    background-color: var(--objet-clic);
+    padding: 0px 20px 0px 20px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+
+
+
+/* ==== CSS body ==== */
+
+
+body {
+    background-color: var(--fond-principal);
+}
