@@ -132,26 +132,17 @@ a:active {
 
 /* == hover == */
 
-
 .bulle_info:hover {
     border: solid var(--objet-survol);
-    color: var(--texte-lien);
-    padding: 0px;
-    margin: 5% 21% 5% 21%;
-    transition: 1s;
-}
-.bulle_info:hover * {
-    color: inherit; /* "Prends la même couleur que ton parent" */
-    border: none;
-    transition: 1s;
-}
-
-
-.bulle_action:hover {
-    border: solid var(--texte-lien);
-    color: var(--objet-survol);
     padding: 6px;
     margin: 5% 19% 5% 19%;
+    transition: 1s;
+}
+
+.bulle_action:hover {
+    color: var(--objet-survol);
+    padding: 0px;
+    margin: 5% 21% 5% 21%;
     transition: 1s;
 }
 .bulle_action:hover * {
@@ -167,7 +158,6 @@ a:active {
     border: solid var(--objet-clic);
     transition: 1s;
 }
-
 .bulle_action:active {
     color: var(--objet-clic);
     transition: 1s;
@@ -176,24 +166,28 @@ a:active {
 
 
 
-/* ==== PALETTE DES BUTTONS ==== */
+/* ==== PALETTE des btn ==== */
 
 
 .btn_base {
-    background-color: var(--objet-permanent);
-    padding: 5px 25px 5px 25px;
+    background-color: var(--font-contenu);
+    color: var(--objet-permanent);
+    padding: 20px 30px 20px 30px;
     border-radius: 100px;
-    display: block; 
-    margin: auto;
-    transition: 0.5s;
+    margin: 2% ;
+    transition: 1s;
+}
+
+.btn_jeux {
+    width: 90px;
+    height: 90px;
 }
 
 
 /* survol */
 
 .btn_base:hover {
-    background-color: var(--objet-survol);
-    padding: 3px 23px 3px 23px;
+    padding: 25px 35px 25px 35px;
     border-radius: 100px;
     transition: 0.5s;
 }
@@ -202,8 +196,7 @@ a:active {
 /* clic */
 
 .btn_base:active {
-    background-color: var(--objet-clic);
-    padding: 0px 20px 0px 20px;
+    padding: 15px 25px 15px 25px;
     border-radius: 100px;
     transition: 0.5s;
 }
@@ -216,4 +209,5 @@ a:active {
 
 body {
     background-color: var(--fond-principal);
+    text-align: center;
 }
