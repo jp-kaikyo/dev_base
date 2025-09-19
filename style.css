@@ -229,8 +229,8 @@ a:active {
 
 @media(max-width:768px){
     .bulle_info:hover {
-        padding: 3px;
-        margin: 2% 24% 2% 24%;
+        border: solid var(--objet-clic);
+        transition: 0.5s;
     }
 }
 
@@ -242,9 +242,9 @@ a:active {
 }
 
 @media(max-width:768px){
-   .bulle_info:active {
-        padding: 3px;
-        margin: 2% 24% 2% 24%;
+   .bulle_action:active {
+        color: var(--objet-clic);
+        transition: 0.5s;
     }
 }
 
