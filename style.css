@@ -229,7 +229,6 @@ a:active {
 
 .bulle_action:hover {
     color: var(--objet-survol);
-    padding: 0px;
     margin: 2% 16% 2% 16%;
     transition: 1s;
 }
@@ -306,6 +305,14 @@ a:active {
     padding: 25px 35px 25px 35px;
     color: var(--objet-survol);
     transition: 0.6s;
+}
+
+@media(max-width:768px){
+    .btn_base:hover {
+        padding: 15px 25px 15px 25px;
+        color: var(--objet-clic);
+        transition: 0.4s;
+    }
 }
 
 
