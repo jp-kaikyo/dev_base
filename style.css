@@ -273,7 +273,7 @@ a:active {
 @media(max-width:768px){
    .bulle_info:active {
         border: solid var(--objet-survol);
-        margin: 2% 28% 2% 28%;
+        margin: 2% 32% 2% 32%;
         transition: 1s;
     }
 }
@@ -286,7 +286,7 @@ a:active {
 @media(max-width:768px){
    .bulle_action:active {
         color: var(--objet-survol);
-        margin: 2% 28% 2% 28%;
+        margin: 2% 32% 2% 32%;
         transition: 1s;
     }
     .bulle_action:active * {
