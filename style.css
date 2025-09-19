@@ -220,7 +220,7 @@ a:active {
 /* == hover == */
 
 .bulle_info:hover {
-    border: solid var(--objet-survol);
+    color: var(--objet-survol);
     padding: 3px;
     margin: 2% 16% 2% 16%;
     transition: 1s;
@@ -228,7 +228,8 @@ a:active {
 
 @media(max-width:768px){
     .bulle_info:hover {
-        margin: 2% 24% 2% 24%;
+        color: var(--objet-survol);
+        margin: 2% 28% 2% 28%;
         transition: 1s;
     }
 }
@@ -242,7 +243,8 @@ a:active {
 
 @media(max-width:768px){
     .bulle_action:hover {
-        margin: 2% 24% 2% 24%;
+        color: var(--objet-survol);
+        margin: 2% 28% 2% 28%;
         transition: 1s;
     }
 }
