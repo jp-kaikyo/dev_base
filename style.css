@@ -289,15 +289,15 @@ a:active {
 .btn_base {
     background-color: var(--font-contenu);
     color: var(--objet-permanent);
-    padding: 20px 30px 20px 30px;
     border-radius: 100px;
-    margin: 2% ;
+    padding: 20px 30px 20px 30px;
     transition: 0.6s;
 }
 
-.btn_jeux {
-    width: 90px;
-    height: 90px;
+@media(max-width:768px){
+    .btn_base {
+        padding: 10px 20px 10px 20px;
+    }
 }
 
 
@@ -305,7 +305,6 @@ a:active {
 
 .btn_base:hover {
     padding: 25px 35px 25px 35px;
-    border-radius: 100px;
     color: var(--objet-survol);
     transition: 0.6s;
 }
@@ -315,9 +314,14 @@ a:active {
 
 .btn_base:active {
     padding: 15px 25px 15px 25px;
-    border-radius: 100px;
     color: var(--objet-clic);
     transition: 0.4s;
+}
+
+@media(max-width:768px){
+    .btn_base:active {
+        padding: 5px 10px 5px 10px;
+    }
 }
 
 
