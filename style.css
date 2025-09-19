@@ -27,9 +27,10 @@
 :root {
     --police-titre: Georgia, "Times New Roman", serif;
     --police-texte: "Comic Sans MS", cursive, sans-serif;
-    --taille-titre-principal: 2rem;  /* h1 */
+    --taille-titre-principal: 2rem;      /* h1 */
     --taille-sous-titre: 1.5rem;         /* h2 */
-    --taille-texte: 1rem;              /* p */
+    --taille-texte: 1rem;                /* p */
+    --taille-liens:1rem;                 /* a */
     --gras-titre: 700;
     --gras-texte: 400;
 }
@@ -39,6 +40,7 @@
     --taille-titre-principal: 1.25rem;  /* h1 */
     --taille-sous-titre: 1rem;         /* h2 */
     --taille-texte: 0.75rem;              /* p */
+    --taille-liens: 0.75rem;                 /* a */
 }}
 
 
