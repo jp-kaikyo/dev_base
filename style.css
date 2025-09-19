@@ -154,7 +154,7 @@ a:active {
     color:var(--font-contours);
     border: solid var(--font-contours);
     padding: 3px;
-    margin: 2% 14% 2% 14%;
+    margin: 2% 12% 2% 12%;
     text-align: center;
     border-radius: 100px;
     transition: 1s;
@@ -163,7 +163,7 @@ a:active {
 @media(max-width:768px){
     .bulle_action {
         padding: 3px;
-        margin: 2% 28% 2% 28%;
+        margin: 2% 24% 2% 24%;
     } 
 }
 
@@ -226,11 +226,25 @@ a:active {
     transition: 1s;
 }
 
+@media(max-width:768px){
+    .bulle_info:hover {
+        margin: 2% 24% 2% 24%;
+        transition: 1s;
+    }
+}
+
 .bulle_action:hover {
     color: var(--objet-survol);
     padding: 0px;
     margin: 2% 21% 2% 21%;
     transition: 1s;
+}
+
+@media(max-width:768px){
+    .bulle_action:hover {
+        margin: 2% 24% 2% 24%;
+        transition: 1s;
+    }
 }
 
 .bulle_action:hover * {
@@ -268,8 +282,9 @@ a:active {
 
 @media(max-width:768px){
    .bulle_action:active {
-        color: var(--objet-clic);
-        transition: 0.5s;
+        color: var(--objet-survol);
+        margin: 2% 28% 2% 28%;
+        transition: 1s;
     }
 }
 
