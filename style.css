@@ -227,11 +227,25 @@ a:active {
     transition: 1s;
 }
 
+@media(max-width:768px){
+    .bulle_info:hover {
+        padding: 3px;
+        margin: 2% 24% 2% 24%;
+    }
+}
+
 .bulle_action:hover {
     color: var(--objet-survol);
     padding: 0px;
-    margin: 2% 21% 2% 21%;
+    margin: 2% 16% 2% 16%;
     transition: 1s;
+}
+
+@media(max-width:768px){
+   .bulle_info:active {
+        padding: 3px;
+        margin: 2% 24% 2% 24%;
+    }
 }
 
 .bulle_action:hover * {
