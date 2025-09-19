@@ -230,7 +230,8 @@ a:active {
 @media(max-width:768px){
     .bulle_info:hover {
         border: solid var(--objet-clic);
-        transition: 0.5s;
+        margin: 2% 28% 2% 28%;
+        transition: 1s;
     }
 }
 
@@ -241,17 +242,18 @@ a:active {
     transition: 1s;
 }
 
-@media(max-width:768px){
-   .bulle_action:active {
-        color: var(--objet-clic);
-        transition: 0.5s;
-    }
-}
-
 .bulle_action:hover * {
     color: inherit; /* "Prends la même couleur que ton parent" */
     border: none;
     transition: 1s;
+}
+
+@media(max-width:768px){
+   .bulle_action:active {
+        color: var(--objet-clic);
+        margin: 2% 28% 2% 28%;
+        transition: 1s;
+    }
 }
 
 .bulle_lien:hover {
