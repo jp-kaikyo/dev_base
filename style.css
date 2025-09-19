@@ -23,6 +23,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 :root {
     --police-titre: Georgia, "Times New Roman", serif;
     --police-texte: "Comic Sans MS", cursive, sans-serif;
@@ -32,6 +33,13 @@
     --gras-titre: 700;
     --gras-texte: 400;
 }
+
+@media(max-width:768px){
+    :root {
+    --taille-titre-principal: 1.25rem;  /* h1 */
+    --taille-sous-titre: 1rem;         /* h2 */
+    --taille-texte: 0.75rem;              /* p */
+}}
 
 
 /* style titre */
@@ -93,20 +101,34 @@ a:active {
     background-color: var(--font-contenu);
     color:var(--font-contours);
     border: solid var(--font-contours);
-    padding: 9px;
-    margin: 5% 10% 5% 10%;
+    padding: 6px;
+    margin: 2% 8% 2% 8%;
     text-align: center;
     border-radius: 50px;
+}
+
+@media(max-width:768px){
+    .bulle_principal {
+        padding: 6px;
+        margin: 2% 16% 2% 16%;
+    }
 }
 
 .bulle_secondaire {
     background-color: var(--font-contenu);
     color:var(--font-contours);
     border: solid var(--font-contours);
-    padding: 6px;
-    margin: 5% 15% 5% 15%;
+    padding: 3px;
+    margin: 2% 10% 2% 10%;
     text-align: center;
     border-radius: 75px;
+}
+
+@media(max-width:768px){
+    .bulle_secondaire {
+        padding: 3px;
+        margin: 2% 20% 2% 20%;
+    }
 }
 
 .bulle_info {
@@ -114,10 +136,17 @@ a:active {
     color:var(--font-contours);
     border: solid var(--font-contours);
     padding: 3px;
-    margin: 5% 20% 5% 20%;
+    margin: 2% 12% 2% 12%;
     text-align: center;
     border-radius: 100px;
     transition: 1s;
+}
+
+@media(max-width:768px){
+    .bulle_info {
+        padding: 3px;
+        margin: 2% 24% 2% 24%;
+    }   
 }
 
 .bulle_action {
@@ -125,10 +154,17 @@ a:active {
     color:var(--font-contours);
     border: solid var(--font-contours);
     padding: 3px;
-    margin: 5% 20% 5% 20%;
+    margin: 2% 14% 2% 14%;
     text-align: center;
     border-radius: 100px;
     transition: 1s;
+}
+
+@media(max-width:768px){
+    .bulle_action {
+        padding: 3px;
+        margin: 2% 28% 2% 28%;
+    } 
 }
 
 .bulle_lien {
@@ -138,10 +174,21 @@ a:active {
     gap: 5px;
     background-color: var(--font-contenu);
     border: solid var(--font-contours);
-    padding: 1px;
-    margin: 5% 34% 1% 34%;
+    padding: 2px;
+    margin: 1% 35% 1% 35%;
     border-radius: 25px;
     transition: 1s;
+}
+
+@media(max-width:768px){
+    .bulle_lien {
+        padding: 2px;
+        margin: 1% 25% 1% 25%;
+    }
+ 
+    h2 {
+        font-size: 0.80rem; 
+    }
 }
 
 .bulle_lien h2 {
@@ -174,15 +221,15 @@ a:active {
 
 .bulle_info:hover {
     border: solid var(--objet-survol);
-    padding: 6px;
-    margin: 5% 19% 5% 19%;
+    padding: 3px;
+    margin: 2% 16% 2% 16%;
     transition: 1s;
 }
 
 .bulle_action:hover {
     color: var(--objet-survol);
     padding: 0px;
-    margin: 5% 21% 5% 21%;
+    margin: 2% 21% 2% 21%;
     transition: 1s;
 }
 
@@ -194,7 +241,7 @@ a:active {
 
 .bulle_lien:hover {
     border-radius: 50px;
-    margin: 5% 36% 1% 36%;
+    margin: 1% 40% 1% 40%;
     transition: 1s;
 }
 
@@ -203,12 +250,27 @@ a:active {
 
 .bulle_info:active {
     border: solid var(--objet-clic);
-    transition: 1s;
+    transition: 0.5s;
+}
+
+@media(max-width:768px){
+   .bulle_info:active {
+        border: solid var(--objet-survol);
+        margin: 2% 28% 2% 28%;
+        transition: 1s;
+    }
 }
 
 .bulle_action:active {
     color: var(--objet-clic);
-    transition: 1s;
+    transition: 0.5s;
+}
+
+@media(max-width:768px){
+   .bulle_action:active {
+        color: var(--objet-clic);
+        transition: 0.5s;
+    }
 }
 
 
@@ -258,22 +320,33 @@ a:active {
 
 
 img {
-    width: 40px;
-    height: 40px;
+    width: 41px;
+    height: 41px;
     transition: 0.5s;
 }
 
+@media(max-width:768px){
+    img {
+        width: 21px;
+        height: 21px;
+    }
+}
 
 /* == hover == */
 
 img:hover {
-    width: 55px;
-    height: 55px;
+    width: 46px;
+    height: 46px;
     opacity: 50%;
     transition: 0.5s;
 }
 
-
+@media(max-width:768px){
+    img:hover {
+        width: 24px;
+        height: 24px;
+    }
+}
 
 
 /* ==== CSS body ==== */
