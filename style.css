@@ -298,16 +298,6 @@ a:active {
         transition: 1s;      
     }
 }
-@media(max-width:999px){
-    .bulle_info:hover {
-        border: solid var(--objet-survol);
-        transform: scale(1.05);
-        box-shadow: 0px 0px 10px var(--objet-survol);
-        transition: 1s;
-        
-    }
-}
-
 
 @media(min-width:1000px){
     .bulle_action:hover {
@@ -316,34 +306,17 @@ a:active {
         box-shadow: 0px 0px 10px var(--objet-survol);
         transition: 1s;
     }
-}
-@media(max-width:999px){
-   .bulle_action:hover {
-        color: var(--objet-survol);
-        transform: scale(0.95);
-        box-shadow: 0px 0px 10px var(--objet-survol);
+    .bulle_action:hover * {
+        color: inherit; /* "Prends la même couleur que ton parent" */
+        border: none;
         transition: 1s;
     }
 }
-.bulle_action:hover * {
-    color: inherit; /* "Prends la même couleur que ton parent" */
-    border: none;
-    transition: 1s;
-}
-
 
 @media(min-width:1000px){
     .bulle_lien:hover {
         border-radius: 50px;
         margin: 1% 40% 1% 40%;
-        box-shadow: 0px 0px 50px var(--ombre-forte);
-        transition: 0.5s;
-    }
-}
-@media(max-width:999px){
-    .bulle_lien:hover {
-        border-radius: 50px;
-        margin: 1% 20% 1% 20%;
         box-shadow: 0px 0px 50px var(--ombre-forte);
         transition: 0.5s;
     }
@@ -426,13 +399,6 @@ a:active {
         transition: 0.6s;
     }
 }
-@media(max-width:999px){
-    .btn_base:hover {
-        transform: scale(1.10);
-        color: var(--objet-survol);
-        transition: 0.6s;
-    }
-}
 
 
 /* clic */
@@ -442,14 +408,14 @@ a:active {
     .btn_base:active {
         transform: scale(0.90);
         color: var(--objet-clic);
-        transition: 0.4s;
+        transition: 0.5s;
     }
 }
 @media(max-width:999px){
     .btn_base:active {
         transform: scale(0.90);
         color: var(--objet-clic);
-        transition: 0.4s;
+        transition: 0.5s;
     }
 }
 
@@ -481,13 +447,6 @@ a:active {
 
 
 @media(min-width:1000px){
-    .logo:hover {
-        transform: scale(1.15);
-        opacity: 50%;
-        transition: 1s;
-    }
-}
-@media(max-width:999px){
     .logo:hover {
         transform: scale(1.15);
         opacity: 50%;
