@@ -354,30 +354,16 @@ a:active {
 
 
 @media(min-width:1000px){
+    .bulle_action:active,
     .bulle_info:active {
-        border: solid var(--objet-clic);
-        box-shadow: 0px 0px 20px var(--objet-clic);
-        transition: 0.5s;
-    }
-}
-@media(max-width:999px){
-    .bulle_info:active {
-        border: solid var(--objet-clic);
-        box-shadow: 0px 0px 20px var(--objet-clic);
-        transition: 0.5s;
-    }
-}
-
-
-@media(min-width:1000px){
-    .bulle_action:active {
         color: var(--objet-clic);
         box-shadow: 0px 0px 20px var(--objet-clic);
         transition: 0.5s;
     }
 }
 @media(max-width:999px){
-    .bulle_action:active {
+    .bulle_action:active,
+    .bulle_info:active {
         color: var(--objet-clic);
         box-shadow: 0px 0px 20px var(--objet-clic);
         transition: 0.5s;
